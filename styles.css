@@ -210,3 +210,20 @@ object {
   padding: 0 20px;
   font-family: 'Merriweather', serif;
 }
+.product-button {
+  display: inline-block;
+  width: 45%;
+  align-items: center;
+}
+#products button {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 25%;
+}
+
+#products button:hover {
+  opacity: 0.6;
+}
