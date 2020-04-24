@@ -71,7 +71,7 @@ range of Chemicals and we are supplying to various Reputed users in India. RCHEM
 millions of customers across India. In fact, we are proud to say that our products touch our customers' lives in
 many ways.</p>
     </div>
-    
+
     <div class="photo-div" style="background-image: url(./src/Careers.jpg)">
       <div class="overlay">
       </div>
@@ -92,17 +92,18 @@ many ways.</p>
             </div>
           </div>
           <div class="con-box">
-            <form class="" action="mailto:yashrock112@gmail.com?subject=Rchem&body=hello" method="post" enctype="text/plain">
+            <form class="" name="careers" method="post" enctype="text/plain" data-netlify-recaptcha="true" data-netlify="true">
               <input type="text" name="Name" value="" placeholder="Name" required>
-              <input type="email" name="Email" value="" placeholder="Email">
-              <select class="" name="Position">
+              <input type="email" name="Email" value="" placeholder="Email" required>
+              <select class="" name="Position[]" required>
                 <option value="" disabled selected hidden class="text-grey">Select the position applying for</option>
                 <option value="">Intern</option>
                 <option value="">Sales manager</option>
               </select>
-              <textarea name="CoverLetter" rows="4" cols="" placeholder="Cover Letter"></textarea>
-              <input type="file" name="Resume" value="" accept=".doc, .docx, .txt, .pdf">
-              <p class="text-gray" style="font-size: 12px;text-align:left;">Supported formats: PDF, DOC, DOCx</p>
+              <textarea name="CoverLetter" rows="4" cols="" placeholder="Cover Letter" required></textarea>
+              <!-- <input type="file" name="Resume" value="" accept=".doc, .docx, .txt, .pdf">
+              <p class="text-gray" style="font-size: 12px;text-align:left;">Supported formats: PDF, DOC, DOCx</p> -->
+              <div data-netlify-recaptcha="true"></div>
               <input type="submit" name="Submit" value="Submit">
             </form>
           </div>
@@ -112,7 +113,7 @@ many ways.</p>
         <div class="overlay">
         </div>
       </div>
-      <div class="container box" style="height:700px;" id="contact">
+      <div class="container box" style="height:auto;" id="contact">
         <div class="innerContainer">
           <div class="con-box">
             <h1  class="text-primary heading" style="">Contact Us</h1>
@@ -126,13 +127,14 @@ many ways.</p>
               <a href="https://api.whatsapp.com/send?phone=919571113366"><img src="./src/whatsapp.png"/> 9571113366</a>
             </div>
           <div class="con-box" style="padding-left:0;">
-            <form class="" action="mailto:yashrock112@gmail.com?subject=Rchem&body=contact-form" method="post"  enctype="text/plain">
-              <input type="text" name="Name" value="" placeholder="Name">
-              <input type="email" name="Email" value="" placeholder="Email">
+            <form class="" name="contact-enquiry" method="post"  enctype="text/plain" data-netlify-recaptcha="true" data-netlify="true">
+              <input type="text" name="Name" value="" placeholder="Name" required>
+              <input type="email" name="Email" value="" placeholder="Email" required>
               <input type="text" name="Phone" value="" placeholder="Phone">
               <input type="text" name="Address" value="" placeholder="Address">
-              <input type="text" name="Subject" value="" placeholder="Subject"> <br>
-              <textarea name="message" rows="4" cols="40" placeholder="Type your message here..."></textarea> <br>
+              <input type="text" name="Subject" value="" placeholder="Subject" required> <br>
+              <textarea name="Message" rows="4" cols="40" placeholder="Type your message here..." required></textarea> <br>
+              <div data-netlify-recaptcha="true"></div>
               <input type="submit" name="" value="Submit">
             </form>
           </div>
