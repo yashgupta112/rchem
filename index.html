@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -53,6 +55,7 @@ producer of chemicals all over India. Many things have changed since then - howe
 remains the same - to provide our customers with solutions that improve their lives. We are known
 for the quality and satisfaction provided to the customer. Our company makes sure that you get the
 best services and the product is delivered to you at a reasonable price.</p>
+<p> Wordpress handel : <a href="https://aayublog1994.wordpress.com/2020/05/26/benefits-of-improved-sanitation" alt="wordpress">
     </div>
 
     <div class="photo-div" style="background-image: url(./src/about.jpg)">
@@ -92,19 +95,16 @@ many ways.</p>
             </div>
           </div>
           <div class="con-box">
-            <form class="" name="careers" method="post" enctype="text/plain" data-netlify-recaptcha="true" data-netlify="true">
-              <input type="text" name="Name" value="" placeholder="Name" required>
-              <input type="email" name="Email" value="" placeholder="Email" required>
-              <select class="" name="Position[]" required>
+            <form class="" name="careers" action="./success" method="post" data-netlify="true">
+              <input type="text" name="NAME" value="" placeholder="Name" required>
+              <input type="email" name="EMAIL" value="" placeholder="Email" required>
+              <select class="" name="POSITION[]" required>
                 <option value="" disabled selected hidden class="text-grey">Select the position applying for</option>
                 <option value="">Intern</option>
                 <option value="">Sales manager</option>
               </select>
               <textarea name="CoverLetter" rows="4" cols="" placeholder="Cover Letter" required></textarea>
-              <!-- <input type="file" name="Resume" value="" accept=".doc, .docx, .txt, .pdf">
-              <p class="text-gray" style="font-size: 12px;text-align:left;">Supported formats: PDF, DOC, DOCx</p> -->
-              <div data-netlify-recaptcha="true"></div>
-              <input type="submit" name="Submit" value="Submit">
+              <button type="submit">Submit</button>
             </form>
           </div>
         </div>
@@ -122,12 +122,13 @@ many ways.</p>
             <p>B-258, DEEPAK MARG </p>
               <p>JAIPUR-302004 (RAJASTHAN) INDIA</p>
               <p style="margin-top:30px;"><a href="mailto:hitechbiochemjpr@gmail.com"><img src="./src/gmail.png"/> hitechbiochemjpr@gmail.com</a></p>
-              <p><a href="tel:01414016099"><img src="./src/tel.png"/> 0141-4016099</a> <br>
-              <a href="tel:9352144001"><img src="./src/call.png"/> +91 9352144001</a></p>
-              <a href="https://api.whatsapp.com/send?phone=919571113366"><img src="./src/whatsapp.png"/> 9571113366</a>
+              <p class="links"><a href="tel:01414016099"><img src="./src/tel.png"/>  0141 - 4016099 </a> <br>
+              <a href="tel:9352144001"><img src="./src/call.png"/> +91 9352144001</a> <br>
+              <a href="https://api.whatsapp.com/send?phone=919352144001"><img src="./src/whatsapp.png"/>+91 9352144001</a></p>
+
             </div>
           <div class="con-box" style="padding-left:0;">
-            <form class="" name="contact-enquiry" method="post"  enctype="text/plain" data-netlify-recaptcha="true" data-netlify="true">
+            <form class="" name="contact-enquiry" method="post" action="./success" data-netlify-recaptcha="true" data-netlify="true">
               <input type="text" name="Name" value="" placeholder="Name" required>
               <input type="email" name="Email" value="" placeholder="Email" required>
               <input type="text" name="Phone" value="" placeholder="Phone">
@@ -135,7 +136,7 @@ many ways.</p>
               <input type="text" name="Subject" value="" placeholder="Subject" required> <br>
               <textarea name="Message" rows="4" cols="40" placeholder="Type your message here..." required></textarea> <br>
               <div data-netlify-recaptcha="true"></div>
-              <input type="submit" name="" value="Submit">
+              <button type="submit" name="button">Submit</button>
             </form>
           </div>
         </div>

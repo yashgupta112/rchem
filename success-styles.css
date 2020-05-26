@@ -1,0 +1,129 @@
+  body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      background-color: #dedede;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      max-width: 400px;
+      background: white;
+      color: rgb(14, 30, 37);
+      border-radius: 10px;
+      box-shadow: 0 12px 14px 0 rgba(14, 30, 37, .16);
+    }
+    .body {
+      padding: 0 12px;
+    }
+    .head {
+      padding: 15px 30px;
+      color: white;
+      background-color: #183964;
+      position:absolute;
+      top:0;
+      width:100vw;
+    }
+    .footer {
+      color: white;
+      background-color: #183964;
+      padding: 15px 30px;
+      position:absolute;
+      bottom:0;
+      width:100vw;
+      height:20px;
+    }
+    .header {
+      padding: 5px 24px;
+      background-color: white;
+    }
+
+    a {
+      margin: 0;
+      text-decoration: none;
+      font-weight: 600;
+      line-height: 24px;
+      color: #00ad9f;
+    }
+
+    a svg {
+      position: relative;
+      top: 2px;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      color: #007A70;
+    }
+
+    a:hover svg path{
+      fill: #007A70;
+    }
+
+    p:last-of-type {
+      margin: 0;
+    }
+    .first {
+      display: inline-block;
+      padding-left: 30px;
+      }
+    .second {
+      display: inline-block;
+      position:absolute;
+      right:50px;
+      padding-right: 10px;
+    }
+
+
+@media only screen and (max-width: 990px) {
+  .head {
+    padding: 25px;
+  }
+  .head h1 {
+    font-size: 3rem;
+    padding-left: 50px;
+    position: relative;
+    margin: 0;
+  }
+  .card {
+    max-width: 75vw;
+    font-size: 200%;
+    padding: 32px;
+    border-radius: 15px;
+  }
+  .footer {
+    height: 50px;
+    padding: 25px;
+    font-size: 32px;
+  }
+  .second {
+    top:25px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .head h1 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 24px;
+    padding-left: 50px;
+  }
+  .second {
+    top:15px;
+  }
+  .card {
+    padding: 24px;
+  }
+}
